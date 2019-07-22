@@ -14,28 +14,50 @@
 
 	
 	@media only screen and (min-width: 1065px) {
-	  .parallax {
-	  /* The image used */
-	  background-image: url('wallpaper2.jpg');
+		
+		  .parallax {
+		  /* The image used */
+		  background-image: url('wallpaper2.jpg');
 
-	  /* Full height */
-	  height: 100%; 
+		  /* Full height */
+		  height: 100%; 
 
-	  /* Create the parallax scrolling effect */
-	  background-attachment: fixed;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  
-	  
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  
+		  
+		}
 	}
+	
+	@media only screen and (max-width: 1065px) { 
+	
+	
+	  .parallax {
+		  /* The image used */
+		  background-image: url('wallpaperMOVIL.jpg'); 
+
+		  /* Full height */
+		  height: 100%; 
+
+		  /* Create the parallax scrolling effect */
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  
+		  
+		}
+	
 	}
 	
 	
 	body {
 		color: white;
 		 background-color: rgba(200, 0, 0, 0.8); 
-		 background: url(background.jpg);
+		 background: url(background.jpg);		 
 		 /* background-repeat: no-repeat; */
 		
 	}
@@ -211,7 +233,7 @@
 	<script type="text/javascript">
 		obj = document.getElementById('Comprar');
 		numero = obj.getElementsByTagName('div').length;
-		var precio = 20;//precio en €
+		var precio = 59;//precio en €
 		
 		document.write("<h1>"+numero); //escribe numero de elementos de la lista "Comprar"	
 		document.write(" x "+precio+" € = "+parseInt(precio) * parseInt(numero)+" € </h1>");				
